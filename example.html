@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>jQuery State Select Plugin Test</title>
+    <script type="text/javascript" src="jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="jquery.selectboxes.pack.js"></script>
+    <script type="text/javascript" src="jquery.stateselect.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#country').linkToStates('#province');
+    });
+    </script>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label>Province/State</label><br />
+        <select name="province" id="province">
+          <option value="">Please select a country</option>
+        </select>
+      </p>
+      <p>
+        <label>Country</label><br />
+        <select name="country" id="country">
+          <option>Please select</option>
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+        </select>
+      </p>
+    </form>
+  </body>
+</html>
