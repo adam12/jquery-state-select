@@ -1,29 +1,30 @@
 <html>
   <head>
     <title>jQuery State Select Plugin Test</title>
-    <script type="text/javascript" src="jquery-latest.pack.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+    <script type="text/javascript" src="http://www.thesocialflowers.com/app/js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="jquery.selectboxes.pack.js"></script>
     <script type="text/javascript" src="jquery.stateselect.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
+	  $('#country').initCountries('#country','#province');
       $('#country').linkToStates('#province');
     });
     </script>
   </head>
   <body>
     <form>
-      <p>
-        <label>Province/State</label><br />
-        <select name="province" id="province">
-          <option value="">Please select a country</option>
-        </select>
-      </p>
+
       <p>
         <label>Country</label><br />
         <select name="country" id="country">
-          <option>Please select</option>
-          <option value="Canada">Canada</option>
-          <option value="United States">United States</option>
+          <option>Please select a country</option>
+        </select>
+      </p>
+      <p>
+        <label>Province/State</label><br />
+        <select name="province" id="province">
+          <option value="">Please select a state</option>
         </select>
       </p>
     </form>
